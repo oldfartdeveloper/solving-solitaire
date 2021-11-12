@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up PureScript toolchain
+        uses: purescript-contrib/setup-purescript@main
+
+      - name: Set up Node toolchain
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14.x"
+
+      - name: Install dependencies and run CI
+        run: |
+          source .ci/install-build-test-all.sh
+          exit
