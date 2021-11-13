@@ -20,7 +20,7 @@ jobs:
       - name: Cache PureScript dependencies
         uses: actions/cache@v2
         with:
-          key: ${{ runner.os }}-client-spago-${{ hashFiles('**/client/*.dhall') }}
+          key: ${{ runner.os }}-client-spago-${{ hashFiles('**/*.dhall') }}
           path: |
             .spago
             output
