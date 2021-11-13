@@ -42,11 +42,11 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
-#       - name: Install NPM dependencies
-#         run: npm install
+      - name: Install NPM dependencies
+        run: npm install
 
-#       - name: Build the project
-#         run: npm run build
+      - name: Build the project
+        run: npm run build
 
-#       - name: Run tests
-#         run: npm run test
+      - name: Run tests
+        run: npm run test
