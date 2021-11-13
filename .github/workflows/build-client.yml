@@ -1,7 +1,11 @@
 name: CI
 
+# on:
+#   push:
+#     branches: [master]
+
 on:
-  workflow_dispatch:
+  workflow-dispatch
 
 jobs:
   build:
