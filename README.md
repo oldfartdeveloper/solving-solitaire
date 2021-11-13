@@ -34,8 +34,9 @@ We're just beginning.  This will be a top/down approach:
 | Soon | Model actions: starting games, identifying targets (places where a card could be moved), cards that can be moved to a target, identifying when a game is won or lost |
 | Soon | Be able to run a full game in your development system by installing PureScript, cloning this repo, installing, building, testing, and running the game on your browser|
 | Later | Normalize games to eliminate duplicates |
-| Later | Provide a server that generates new games, stores how you played **\*** , makes available solved games for you to play, and availability of the database for running machine learning on your own. |
+| Later | Provide a server that generates new games, stores how you played **\*** , makes available solved games for you to play, and availability of the database to feed into machine learning (ML). |
 | Later | Be able to configure variations of the game from a simple configuration |
+| Later | Use these features to help research automation to make the computer play better |
 | * | This is asked of you to help build our database so that we can apply machine learning to determine how we're doing.  This builds a library of games that are known to be solveable, blocked, or unknown whether they can be solved or not.  No personal data will need to be submitted except, if you want to identify games that you've already play, you may use a unique token we will provide you to identify games you have already played. |
 
 # Additional Objectives
