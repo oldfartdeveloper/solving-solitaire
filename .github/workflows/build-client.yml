@@ -30,23 +30,23 @@ jobs:
         with:
           node-version: "14.x"
 
-      - name: Cache NPM dependencies
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-node-modules
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/client/package.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
+#       - name: Cache NPM dependencies
+#         uses: actions/cache@v2
+#         env:
+#           cache-name: cache-node-modules
+#         with:
+#           path: ~/.npm
+#           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/client/package.json') }}
+#           restore-keys: |
+#             ${{ runner.os }}-build-${{ env.cache-name }}-
+#             ${{ runner.os }}-build-
+#             ${{ runner.os }}-
 
-      - name: Install NPM dependencies
-        run: npm install
+#       - name: Install NPM dependencies
+#         run: npm install
 
-      - name: Build the project
-        run: npm run build
+#       - name: Build the project
+#         run: npm run build
 
-      - name: Run tests
-        run: npm run test
+#       - name: Run tests
+#         run: npm run test
