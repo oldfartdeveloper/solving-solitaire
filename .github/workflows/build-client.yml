@@ -51,10 +51,11 @@ jobs:
 #       - name: Run tests
 #         run: npm run test
 
-      - name: Build the purescript project
-        run: echo "$GITHUB_WORKSPACE/client"
-#           cd "$GITHUB_WORKSPACE/client"
-#           spago build
+      - name: Echo the client path
+        run: cd "$GITHUB_WORKSPACE/client"
+        
+      - name: Run the purescript build
+        run: spago build
 
 #       - name: Run the purescript project
 #         run: spago run
