@@ -51,12 +51,13 @@ jobs:
 #       - name: Run tests
 #         run: npm run test
 
-        - name: Build
-          run: spago build
-          
-        - name: Run
-          run: spago run
-          
-        - name: Test
-          run: spago test
-          
+      - name: Build the purescript project
+
+      - name: Build the purescript project
+        run: spago build
+
+      - name: Run the purescript project
+        run: spago run
+
+      - name: Test the purescript project
+        run: spago test
