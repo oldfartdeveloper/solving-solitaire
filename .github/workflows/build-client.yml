@@ -53,6 +53,15 @@ jobs:
 
       - name: Print the working directory
         run: pwd
+        
+      - name: cd to the 'client' subdirectory
+        run: cd ./client
+        
+      - name: cd back up
+        run: cd ..
+        
+      - name: print working directory
+        run: pwd
 
 #       - name: Echo the client path
 #         run: cd "$GITHUB_WORKSPACE/client"
