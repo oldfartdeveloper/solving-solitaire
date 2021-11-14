@@ -52,7 +52,7 @@ jobs:
 #         run: npm run test
 
       - name: Build the purescript project
-        run: cd "GITHUB_WORKSPACE/client; spago build
+        run: cd "GITHUB_WORKSPACE/client"; spago build
 
       - name: Run the purescript project
         run: spago run
